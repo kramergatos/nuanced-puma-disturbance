@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>D3JS Demo</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="content_wrap">
+        <h1>D3JS Demo</h1>
+      </div>
+    </header>
+    <main>
+      <div class="content_wrap">
+        <div class="graphs-container"></div>
+      </div>
+    </main>
+    <footer>
+      <div class="content_wrap">
+        <a aria-label="Developer Website" href="https://kramergatos.com">
+          <img alt="JKtheory logo" class="logo" src="./images/joe-kramer-logo-black.png" />
+        </a>
+        <div class="legal">
+          <div class="legal_text">
+            Made with&nbsp;
+            <i class="fas fa-code"></i>
+            &nbsp;&amp;&nbsp;
+            <i class="fas fa-heart"></i>
+          </div>
+          <div aria-label="Copyright" class="legal_text">&copy; 2022 Kramergatos. All Rights Reserved.</div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jqueryui.js"></script>
+    <script src="./js/d3.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/data.js"></script>
+    <script type="text/javascript">
+    $(function () {
+      var sampleData = data()
+      graphs(sampleData)
+    })
+    </script>
+  </body>
+</html>
